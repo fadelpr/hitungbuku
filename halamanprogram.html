@@ -21,6 +21,36 @@
 	</div>
 
 
+	<script>
+
+
+		function hitungPesan(){
+			var nota = document.form2;
+			var hargaHtml = 160000 * eval(nota.uHtml.value);
+			var hargaCss = 120000 * eval(nota.uCss.value);
+			var hargajava  = 100000 * eval(nota.uJava.value);
+			var hargaJquery = 150000 * eval(nota.uJquery.value);
+			
+
+			var jumlahTotal = hargaHtml + hargaCss + hargajava + hargaJquery;
+
+			if (jumlahTotal > 300000){
+				nota.Total.value = jumlahTotal;
+				nota.Diskon.value = 50000;
+				nota.Bayar.value = jumlahTotal - eval(nota.Diskon.value);
+			} else {
+				nota.Total.value = jumlahTotal;
+				nota.Diskon.value = 0;
+				nota.Bayar.value = jumlahTotal - eval(nota.Diskon.value);
+			}
+		}
+
+		function resetForm(){
+			document.form2.reset();
+		}
+	</script>
+
+
 	
 	<div id="tabel1">
 		<form name="form2">
