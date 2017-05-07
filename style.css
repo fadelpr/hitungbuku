@@ -1,0 +1,28 @@
+*{
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+
+h1{
+	font-size: 36px;
+	color: red;
+	padding: 30px;
+	margin-top: -4px;
+	margin-bottom: 60px;
+}
+
+#wrapper{
+	background-color:rgba(255,255,255,0.5);
+	width: 100%;
+}
+#header{
+	background: transparent;
+}
+
+
+body{
+	background-image: url("background.jpg");
+	width: 99%;
+
+}
