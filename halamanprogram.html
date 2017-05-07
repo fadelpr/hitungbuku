@@ -1,9 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+
+
+
+	<!--title-->
+	<title> SELAMAT DATANG DI APLIKASI HITUNG TOTAL PEMBELIAN BUKU</title>
+	<!--title-->
+
+	<link rel="stylesheet" type="text/css" href="pemrograman.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js" ></script>
+	<meta charset="UTF-8">
 </head>
 <body>
 
-</body>
-</html>
+	<div id="wrapper">
+		<div id="header">
+			<center><h1>APLIKASI HITUNG TOTAL HARGA PEMBELIAN BUKU</h1></center>
+		</div>
+	</div>
+
+
+	
+	<div id="tabel1">
+		<form name="form2">
+			<table class="table">
+				<tr id="list">
+					<th>No.</th>
+					<th>Daftar Buku</th>
+					<th>Jumlah</th>
+					<th>Jumlah Buku yang Dibeli</th>
+				</tr>
+
+
+				<tr>
+					<td id="nomor">1.</td>
+					<td class="makanan">Belajar HTML untuk Pemula</td>
+					<td id="penjumlahan"><input type="text" class="menu" name="html" value="Rp.120000" size="10"/></td>
+					<td id="buku"><input type="text" name="uHtml" value="0" onChange="hitungPesan()"/></td>
+
+				</tr>
+
+				<tr>
+					<td>2.</td>
+					<td class="makanan">24 Jam Mahir CSS</td>
+					<td><input type="text" name="css" class="menu" value="Rp.100000" size="10"/></td>
+					<td><input type="text" name="uCss" value="0" onChange="hitungPesan()"/></td>
+
+				</tr>
+
+				<tr>
+					<td>3.</td>
+					<td class="makanan">Panduan Javascript</td>
+					<td><input type="text" class="menu"  name="java" value="Rp.150000" size="10"/></td>
+					<td><input type="text" name="uJava" value="0" onChange="hitungPesan()"/></td>
+				</tr>
+
+				<tr>
+					<td>4.</td>
+					<td class="makanan">Belajar Jquery</td>
+					<td><input type="text" name="jquery" class="menu"  value="Rp.150000" size="10"/></td>
+					<td><input type="text" name="uJquery" value="0" onChange="hitungPesan()"/></td>
+				</tr>
+
+				
+				<tr>
+					<td colspan="3">Jumlah Total</td>
+					<td><input type="text" name="Total"/></td>
+				</tr>
+
+				<tr>
+					<td colspan="3">Diskon</td>
+					<td><input type="text" name="Diskon" /></td>
+				</tr>
+
+				<tr>
+					<td colspan="3">Jumlah Dibayar</td>
+					<td><input type="text" name="Bayar"/></td>
+				</tr>
+			</table>
+
+
+
+			<p><b> Keterangan : Diskon Rp.50.000 untuk pembelian diatas Rp.
+				300.000 </b></p>
+
+
+				<input type="button" class="button" value="RESET" onClick="resetForm()" />
+			</form>
+		</div>
+
+	</body>
+	</html>
