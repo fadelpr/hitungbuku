@@ -213,15 +213,18 @@ body{
 
 
 #fdw-tabel-buku .plan1 .daftar:hover{
+	transition-duration: 0.4s;
 	background: #01579B;
 }
 
 #fdw-tabel-buku .plan2 .daftar:hover{
+	transition-duration: 0.4s;
 	background: #33691E;
 }
 
 
 #fdw-tabel-buku .plan3 .daftar:hover{
+	transition-duration: 0.4s;
 	background: #FF6F00;
 }	
 
